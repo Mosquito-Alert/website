@@ -48,7 +48,7 @@ Phase 1 moves the content as it is, onto a plain theme. Phase 2 (2027, separate 
 
 | Date | Step |
 |---|---|
-| Until Wed 11 Nov 2026, 12:00 CET | Questions by email to john.palmer@upf.edu. Answers are shared with all bidders. |
+| Until Wed 11 Nov 2026, 12:00 CET | Questions by email to john.palmer@upf.edu and bruno.castro@upf.edu. Answers are shared with all bidders. |
 | **Fri 13 Nov 2026, 12:00 CET** | **Quotation deadline for WP1 and WP2** |
 | Mon 16 Nov | Decision communicated |
 | Tue 17 Nov | Kick-off call (1 hour; Wed 18 Nov at the latest). The project team hands over the WordPress export, the media files, the URL inventory and access to the repository (section 9). |
