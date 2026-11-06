@@ -23,7 +23,7 @@ CFG = {
     <div><dt>Client</dt><dd>Mosquito Alert · Universitat Pompeu Fabra (UPF)</dd></div>
     <div><dt>Contact</dt><dd>John Palmer · <a href="mailto:john.palmer@upf.edu">john.palmer@upf.edu</a></dd></div>
     <div><dt>Quotations due</dt><dd>Fri 13 Nov 2026, 12:00 CET (<a href="#how-to-submit-a-quotation">§12</a>)</dd></div>
-    <div><dt>Work period</dt><dd>WP1–2: Mon 23 Nov – Fri 11 Dec 2026, invoiced by 18 Dec · WP3: Jan–Feb 2027, separate request · WP4 (launch): after Phase 2</dd></div>
+    <div><dt>Work period</dt><dd>WP1–2: Tue 17 Nov – Fri 11 Dec 2026, invoiced by 18 Dec · WP3: Jan–Feb 2027, separate request · WP4 (launch): after Phase 2</dd></div>
   </dl>
   <div class="glance" role="list" aria-label="At a glance">
     <div role="listitem"><span class="k">Hosting</span><span class="v">GitHub Pages · GPL-3.0</span></div>

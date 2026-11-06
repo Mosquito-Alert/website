@@ -27,7 +27,7 @@ The work is divided into four work packages (section 4). **This request asks for
 | Languages | Spanish (default, at the root), Catalan (`/ca/`), English (`/en/`) |
 | Licence | GPL-3.0, in a public repository of the Mosquito-Alert GitHub organisation |
 | Starting point | Optional: a Hugo scaffold started by the project team, on the `scaffold-2025` branch of the public repository (Appendix C) |
-| Work period | WP1 and WP2: Mon 23 Nov – Fri 11 Dec 2026, accepted and invoiced by Fri 18 Dec. WP3: January–February 2027, separate request. WP4 (launch): after Phase 2 |
+| Work period | WP1 and WP2: Tue 17 Nov – Fri 11 Dec 2026 at the latest, accepted and invoiced by Fri 18 Dec. WP3: January–February 2027, separate request. WP4 (launch): after Phase 2 |
 | Price | A fixed price for WP1 and a fixed price for WP2, **excluding VAT**, with VAT shown separately, plus a price for each option. No prices for WP3, WP4 or Phase 2 |
 
 Each requirement has one priority: **MUST** (required) or **SHOULD** (expected; tell us if dropping it would lower the price). Optional items marked **OPT** are priced separately. Requirement IDs (e.g. `URL-03`) are there so you can refer to them in your quotation. The **WP** column says which work package a requirement belongs to.
@@ -50,8 +50,8 @@ Phase 1 moves the content as it is, onto a plain theme. Phase 2 (2027, separate 
 |---|---|
 | Until Wed 11 Nov 2026, 12:00 CET | Questions by email to john.palmer@upf.edu. Answers are shared with all bidders. |
 | **Fri 13 Nov 2026, 12:00 CET** | **Quotation deadline for WP1 and WP2** |
-| Wed 18 Nov | Decision communicated |
-| Mon 23 Nov | Kick-off call (1 hour). The project team hands over the WordPress export, the media files, the URL inventory and access to the repository (section 9). |
+| Mon 16 Nov | Decision communicated |
+| Tue 17 Nov | Kick-off call (1 hour; Wed 18 Nov at the latest). The project team hands over the WordPress export, the media files, the URL inventory and access to the repository (section 9). |
 | **Fri 11 Dec** | **Milestone 1: WP1 and WP2 delivered.** The migration pipeline runs end to end. A preview site shows all blog posts, FAQ items and events with the home, blog and page templates in the three languages. Pages are migrated but not yet converted (that is WP3). |
 | Wed 16 Dec | The project team sends one consolidated round of feedback on WP1 and WP2 |
 | **Fri 18 Dec** | **Acceptance of WP1 and WP2 confirmed by the project team, and invoices submitted** |
@@ -60,7 +60,7 @@ Phase 1 moves the content as it is, onto a plain theme. Phase 2 (2027, separate 
 | Until Thu 18 Feb 2027 | Bug fixes on WP1 and WP2 at no extra cost |
 | 2027, after Phase 2 | Phase 2 (restructuring and redesign, separate contract) works on the preview site. Then WP4: content freeze and final pipeline run, **launch** at `www.mosquitoalert.com`, and the old site kept at a fallback address for three months |
 
-Each work package is invoiced when it is accepted. **WP1 and WP2 must be accepted and invoiced in 2026**, by 18 December. Payment follows UPF's standard procedures after the invoice is accepted; UPF will tell the selected contractor what invoicing requirements apply. Please confirm in your quotation that you can meet these dates. The current WordPress site stays in production, and keeps receiving new posts, until the launch.
+Each work package is invoiced when it is accepted. **WP1 and WP2 must be accepted and invoiced in 2026**, by 18 December. Payment follows UPF's standard procedures after the invoice is accepted; UPF will tell the selected contractor what invoicing requirements apply. Please confirm in your quotation that you can meet these dates. They are latest dates: a package delivered earlier is reviewed, accepted and invoiced earlier. The current WordPress site stays in production, and keeps receiving new posts, until the launch.
 
 ---
 
@@ -261,7 +261,7 @@ The site currently uses Google Analytics 4 without a consent banner. The team ma
 
 ## 9. What the project team provides
 
-By the kick-off on **Monday 23 November 2026**, unless noted:
+By the kick-off on **Tuesday 17 November 2026**, unless noted:
 
 1. **The WordPress export (WXR)** of the whole site, and a fresh export at content freeze (WP4, after Phase 2). The export contains unpublished items and author details; it is confidential and only published content is migrated.
 2. **A copy of the uploads folder** (2,790 files, 1.46 GB, originals only), the list of files referenced by published content, the keep/drop list for unreferenced files, and the new files at content freeze.
@@ -319,11 +319,11 @@ These may or may not be ordered.
 
 ## 12. How to submit a quotation
 
-Send your quotation by email to **john.palmer@upf.edu** by **Friday 13 November 2026, 12:00 CET**. Please include:
+Send your quotation by email to **john.palmer@upf.edu** and **bruno.castro@upf.edu** by **Friday 13 November 2026, 12:00 CET**. Please include:
 
 1. **A fixed price excluding VAT for WP1 and for WP2**, with the applicable VAT shown separately (if you are established outside Spain, say whether the reverse charge applies instead), and ANA-02 as a separate line. UPF may award the two packages together or separately, and may award them to different bidders. If you quote for only one, say which. Tell us which SHOULD items you would drop to reduce the price, and by how much.
 2. **A price excluding VAT for each optional item** OPT-01 to OPT-05.
-3. **Confirmation that you can deliver WP1 and WP2 by 11 December and invoice by 18 December 2026**, and who will do the work between 23 November and 18 December.
+3. **Confirmation that you can deliver WP1 and WP2 by 11 December and invoice by 18 December 2026**, and who will do the work between 17 November and 18 December. Earlier delivery is welcome.
 4. **Your approach**: Hugo version and theme approach; how the pipeline obtains translation links (MIG-02); how you handle scaled image variants (MIG-04); how the shortcodes of Appendix A.3 (TECH-11) will support the later conversion of the Fusion Builder pages; whether you would start from the scaffold (Appendix C) or from scratch, and why.
 5. **2–3 examples** of relevant work, such as WordPress-to-static migrations, Hugo or other static sites, and multilingual or accessible websites, with links.
 6. **Assumptions and exclusions.**
