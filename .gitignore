@@ -1,0 +1,20 @@
+# Hugo build artifacts
+public/
+resources/
+.hugo_build.lock
+
+# Logs and temporary files
+*.log
+*.tmp
+.DS_Store
+
+# Python tooling
+__pycache__/
+*.pyc
+.venv/
+
+# Node/Yarn caches (if pipelines use JS tooling)
+node_modules/
+
+# Specification build output
+tools/spec-build/out/

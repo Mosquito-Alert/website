@@ -1,0 +1,54 @@
+{{ $data := .Site.Data.home.news }}
+{{ $posts := first 3 (where (where .Site.RegularPages "Type" "blog") "Lang" .Lang) }}
+<section class="home-section home-news">
+  <div class="wrap">
+    <div class="section-heading">
+      <h2>{{ $data.title }}</h2>
+      {{ with $data.more_url }}<a class="see-all" href="{{ . }}">{{ $data.more_text }}</a>{{ end }}
+    </div>
+    <div class="news-grid">
+      {{ if gt (len $posts) 0 }}
+        {{ range $posts }}
+          {{ $img := "" }}
+          {{ with .Params.featured_image }}{{ $img = . }}{{ end }}
+          {{ if eq $img "" }}
+            {{ with .Params.image }}{{ $img = . }}{{ end }}
+          {{ end }}
+          {{ if eq $img "" }}
+            {{ with .Params.images }}
+              {{ if gt (len .) 0 }}
+                {{ $img = index . 0 }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+          {{ if eq $img "" }}
+            {{ with (.Resources.ByType "image") }}
+              {{ with index . 0 }}
+                {{ $img = .RelPermalink }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        <article class="news-card">
+          {{ if ne $img "" }}
+          <figure>
+            <img src="{{ $img }}" alt="{{ .Title }}" loading="lazy" />
+          </figure>
+          {{ end }}
+          <div class="news-body">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Summary | plainify }}</p>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 MMMM yyyy" }}</time>
+          </div>
+        </article>
+        {{ end }}
+      {{ else }}
+        <p>Aún no hay noticias en esta lengua.</p>
+      {{ end }}
+    </div>
+    {{ with $data.cta_url }}
+    <div class="section-cta">
+      <a class="btn btn-outline" href="{{ . }}">{{ $data.cta_text }}</a>
+    </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,16 @@
+{{ $data := .Site.Data.home.newsletter }}
+{{ if $data }}
+<section class="home-section home-newsletter">
+  <div class="wrap">
+    <div class="newsletter-intro">
+      <h2>{{ $data.title }}</h2>
+      {{ with $data.description }}<p>{{ . }}</p>{{ end }}
+    </div>
+    <form class="newsletter-form" method="post" action="{{ $data.form_action }}">
+      <label class="sr-only" for="newsletter-email">{{ i18n "newsletterEmailLabel" | default "Correo electrónico" }}</label>
+      <input id="newsletter-email" type="email" name="email" placeholder="{{ $data.email_placeholder }}" required />
+      <button type="submit" class="btn btn-outline-light">{{ $data.submit_text }}</button>
+    </form>
+  </div>
+</section>
+{{ end }}

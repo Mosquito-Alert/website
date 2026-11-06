@@ -1,0 +1,22 @@
+{{ $data := .Site.Data.home.stats }}
+<section class="home-section home-stats">
+  <div class="wrap">
+    <header class="section-intro">
+      <h2>{{ $data.title }}</h2>
+      <p class="section-copy">{{ $data.subtitle }}</p>
+    </header>
+    <div class="stats-grid">
+      {{ range $data.metrics }}
+      <article class="stat-card">
+        <p class="stat-value">{{ .value }}</p>
+        <p class="stat-label">{{ .label }}</p>
+      </article>
+      {{ end }}
+    </div>
+    {{ with $data.cta_url }}
+    <div class="section-cta">
+      <a class="btn btn-outline" href="{{ . }}">{{ $data.cta_text }}</a>
+    </div>
+    {{ end }}
+  </div>
+</section>

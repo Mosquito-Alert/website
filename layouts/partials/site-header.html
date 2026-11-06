@@ -1,0 +1,132 @@
+{{ $page := . }}
+{{ $nav := .Site.Data.navigation }}
+{{ $menu := .Site.Menus.main }}
+{{ $menuLabel := i18n "header_menu_toggle" }}
+{{ $primaryNavLabel := i18n "header_primary_nav_label" }}
+<header class="site-header">
+  {{ with $nav.top_bar }}
+  <div class="site-header__top">
+    <div class="wrap">
+      <div class="header-top__social">
+        {{ with .social }}
+        <ul>
+          {{ range . }}
+          <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      <div class="header-top__links">
+        {{ with .links }}
+        <ul>
+          {{ range . }}
+          <li><a href="{{ .url }}">{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ with .languages }}
+        {{ $languageMenuID := printf "site-language-menu-%s" $.Site.Language.Lang }}
+        <div class="header-top__languages" role="navigation" aria-label="{{ i18n "header_language_selector" }}">
+          <button
+            type="button"
+            data-language-menu
+            aria-expanded="false"
+            aria-controls="{{ $languageMenuID }}"
+          >
+            {{ $current := $.Site.Language.Lang | default "es" }}
+            {{ $label := "" }}
+            {{ range . }}
+              {{ if eq .code $current }}{{ $label = .label }}{{ end }}
+            {{ end }}
+            {{ if eq $label "" }}{{ $label = upper $current }}{{ end }}
+            {{ $label }}
+          </button>
+          <ul id="{{ $languageMenuID }}">
+            {{ range . }}
+            <li>
+              <a href="{{ .url }}" {{ if eq .code $.Site.Language.Lang }}aria-current="true"{{ end }}>{{ .label }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  <div class="site-header__main">
+    <div class="wrap">
+      <div class="site-header__branding">
+        <a class="brand" href="{{ .Site.BaseURL }}">
+          <img
+            src="/uploads/2017/01/mosquitoalert_logo.png"
+            srcset="/uploads/2017/01/mosquitoalert_logo.png 1x, /uploads/2017/01/logoMA-1.png 2x"
+            alt="{{ .Site.Title }}"
+          />
+          <span class="sr-only">{{ .Site.Title }}</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="nav-toggle__icon" aria-hidden="true"></span>
+          <span class="nav-toggle__label">{{ $menuLabel }}</span>
+        </button>
+      </div>
+      <div class="header-navigation" data-header-nav data-nav-open="false" id="primary-navigation">
+        {{ with $menu }}
+        <nav class="primary-nav" aria-label="{{ $primaryNavLabel }}">
+          <ul>
+            {{ range $index, $item := . }}
+              {{ $hasChildren := $item.HasChildren }}
+              {{ $subnavID := printf "subnav-%d" (add $index 1) }}
+              {{ $isActive := or ($page.IsMenuCurrent "main" $item) ($page.HasMenuCurrent "main" $item) }}
+              <li
+                class="{{ if $hasChildren }}has-children{{ end }}"
+                data-nav-item
+                {{ if $hasChildren }}data-subnav-open="false"{{ end }}
+              >
+                <div class="nav-item__heading">
+                  <a href="{{ $item.URL }}"{{ if $isActive }} class="is-active" aria-current="page"{{ end }}>{{ $item.Name }}</a>
+                  {{ if $hasChildren }}
+                    <button
+                      type="button"
+                      class="subnav-toggle"
+                      data-subnav-toggle
+                      aria-expanded="false"
+                      aria-controls="{{ $subnavID }}"
+                    >
+                      <span class="sr-only">{{ i18n "header_subnav_toggle" (dict "Section" $item.Name) }}</span>
+                    </button>
+                  {{ end }}
+                </div>
+                {{ with $item.Children }}
+                <ul class="subnav" id="{{ $subnavID }}">
+                  {{ range . }}
+                    {{ $childActive := $page.IsMenuCurrent "main" . }}
+                  <li><a href="{{ .URL }}"{{ if $childActive }} class="is-active" aria-current="page"{{ end }}>{{ .Name }}</a></li>
+                  {{ end }}
+                </ul>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </nav>
+        {{ end }}
+        {{ with $nav.support }}
+        <div class="header-support">
+          {{ with .label }}<span>{{ . }}</span>{{ end }}
+          {{ with .logo }}
+          <a href="{{ .url }}" target="_blank" rel="noopener">
+            <img src="{{ .image }}" alt="{{ $.Site.Title }} partner" />
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</header>

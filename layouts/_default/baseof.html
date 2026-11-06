@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}" />{{ end }}
+    {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}" />{{ end }}
+    {{ with resources.Get "css/base.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}" />{{ end }}
+    {{ if .IsHome }}
+      {{ with resources.Get "css/home.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}" />{{ end }}
+    {{ end }}
+  </head>
+  <body{{ if .IsHome }} class="is-home"{{ end }}>
+    {{ partial "site-header.html" . }}
+  <main class="site-content{{ if .IsHome }} home{{ end }}">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "site-footer.html" . }}
+    {{ with resources.Get "js/site.js" }}
+      <script src="{{ .RelPermalink }}" defer></script>
+    {{ end }}
+    {{ if .IsHome }}
+      {{ with resources.Get "js/home.js" }}
+        <script src="{{ .RelPermalink }}" defer></script>
+      {{ end }}
+    {{ end }}
+  </body>
+</html>

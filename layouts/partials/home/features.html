@@ -1,0 +1,29 @@
+{{ $data := .Site.Data.home.objectives }}
+<section class="home-section home-objectives">
+  <div class="wrap">
+    <header class="section-intro">
+      <p class="section-eyebrow">{{ $data.title }}</p>
+      <h2>{{ $data.subtitle }}</h2>
+      <p class="section-copy">{{ $data.description }}</p>
+    </header>
+    <div class="objective-grid">
+      {{ range $data.items }}
+      <article class="objective-card">
+        <div class="card-image">
+          <img src="{{ .image }}" alt="{{ .title }}" />
+        </div>
+        <div class="card-body">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+          <a class="card-link" href="{{ .url }}">{{ .link_label }}</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    {{ with $data.cta_url }}
+    <div class="section-cta">
+      <a class="btn btn-outline" href="{{ . }}">{{ $data.cta_text }}</a>
+    </div>
+    {{ end }}
+  </div>
+</section>
