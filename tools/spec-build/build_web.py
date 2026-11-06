@@ -18,16 +18,16 @@ CFG = {
   <div class="stripe" aria-hidden="true"></div>
   <p class="eyebrow">Specification for quotation <span class="draft">Phase 1</span></p>
   <h1>Mosquito Alert website: migration from WordPress to Hugo</h1>
-  <p class="lede">Move the public website www.mosquitoalert.com, with its 600 blog posts, 200 pages, FAQ and media in Spanish, Catalan and English, from WordPress to a static Hugo site on GitHub Pages, keeping its URLs, navigation and look, so that the project team can maintain it from a Git repository and restyle it in a later phase.</p>
+  <p class="lede">Move the public website www.mosquitoalert.com, with its 600 blog posts, 200 pages, FAQ and media in Spanish, Catalan and English, from WordPress to a static Hugo site on GitHub Pages, keeping its URLs, navigation and content on a plain theme, so that the project team can maintain it from a Git repository and redesign it in Phase 2 before it goes live.</p>
   <dl class="meta">
     <div><dt>Client</dt><dd>Mosquito Alert · Universitat Pompeu Fabra (UPF)</dd></div>
     <div><dt>Contact</dt><dd>John Palmer · <a href="mailto:john.palmer@upf.edu">john.palmer@upf.edu</a></dd></div>
     <div><dt>Quotations due</dt><dd>Fri 13 Nov 2026, 12:00 CET (<a href="#how-to-submit-a-quotation">§12</a>)</dd></div>
-    <div><dt>Work period</dt><dd>WP1–2: Mon 23 Nov – Fri 11 Dec 2026, invoiced by 18 Dec · WP3–4: Jan–Feb 2027, separate request</dd></div>
+    <div><dt>Work period</dt><dd>WP1–2: Mon 23 Nov – Fri 11 Dec 2026, invoiced by 18 Dec · WP3: Jan–Feb 2027, separate request · WP4 (launch): after Phase 2</dd></div>
   </dl>
   <div class="glance" role="list" aria-label="At a glance">
     <div role="listitem"><span class="k">Hosting</span><span class="v">GitHub Pages · GPL-3.0</span></div>
-    <div role="listitem"><span class="k">Design</span><span class="v">The current site, reproduced</span></div>
+    <div role="listitem"><span class="k">Design</span><span class="v">Plain theme · redesign in Phase 2</span></div>
     <div role="listitem"><span class="k">Content</span><span class="v">607 posts · 206 pages · 1 GB media</span></div>
     <div role="listitem"><span class="k">Languages</span><span class="v">Spanish · Catalan · English</span></div>
     <div role="listitem"><span class="k">Requirements</span><span class="v num">{{MUST}} must · {{SHOULD}} should · {{OPTS}} opt.</span></div>

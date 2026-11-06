@@ -12,23 +12,23 @@
 
 We want to move the public website of Mosquito Alert, [www.mosquitoalert.com](https://www.mosquitoalert.com), from **WordPress** to a **static site generated with Hugo and hosted on GitHub Pages**, so that the project team can maintain it by editing files in a Git repository, without WordPress, plugins or a hosting provider.
 
-**Phase 1, this request, reproduces the current site**: the same content, URLs, navigation and languages, and essentially the same look. It is a migration, not a redesign. A later **Phase 2**, contracted separately, will restructure and redesign the site under a new visual identity. Phase 1 must therefore separate content, structure and styling cleanly, so that Phase 2 is a re-skin and not a second migration.
+**Phase 1, this request, migrates the current site**: the same content, URLs, navigation and languages, presented with a plain, functional theme. It is a migration, not a redesign, and it does **not** reproduce the look of the current site. The migrated site lives on a preview address; a later **Phase 2**, contracted separately, will restructure and restyle it under a new visual identity, and only then will it replace `www.mosquitoalert.com`. Phase 1 must therefore separate content, structure and styling cleanly, so that Phase 2 is a redesign of the theme and not a second migration.
 
 The site is used by people around the world: schools, journalists, public-health staff, researchers and the users of the Mosquito Alert app, and it is linked from scientific papers and from the app. **Links must keep working** (section 6.1).
 
-The work is divided into four work packages (section 4). **This request asks for binding quotations for work packages 1 and 2** (the content migration pipeline, and the theme and site build), to be delivered on a preview site by **11 December 2026** and accepted and invoiced by **18 December 2026**. Work packages 3 and 4 (conversion of the page-builder pages; quality assurance, launch and handover) are described here so that you can see the whole, and will be requested separately in December for January–February 2027; indicative prices for them are welcome. Quotations are due by **Friday 13 November 2026, 12:00 CET** (section 12).
+The work is divided into four work packages (section 4). **This request asks for binding quotations for work packages 1 and 2** (the content migration pipeline, and the theme and site build), to be delivered on a preview site by **11 December 2026** and accepted and invoiced by **18 December 2026**. Work package 3 (conversion of the page-builder pages) will be requested separately in December for January–February 2027, and work package 4 (launch) after Phase 2. Both are described here so that you can see the whole; no prices are requested for them. Quotations are due by **Friday 13 November 2026, 12:00 CET** (section 12).
 
 | At a glance | |
 |---|---|
-| What | Migration of an existing multilingual WordPress site (about 600 blog posts, 200 pages, 85 FAQ items, 160 past events, 1 GB of media) to Hugo on GitHub Pages, keeping its URLs and look |
-| Design | The current site is the design reference. No new design in Phase 1 |
+| What | Migration of an existing multilingual WordPress site (about 600 blog posts, 200 pages, 85 FAQ items, 160 past events, 1 GB of media) to Hugo on GitHub Pages, keeping its URLs |
+| Design | A plain, functional theme with the current logo and colours (TECH-12). The look of the current site is not reproduced; Phase 2 redesigns the site before it goes live |
 | Visitors enter data? | Only a newsletter sign-up, handled by Mailchimp. No contact forms, comments or accounts |
 | Server / backend | **None.** A static site on GitHub Pages, built by GitHub Actions |
 | Languages | Spanish (default, at the root), Catalan (`/ca/`), English (`/en/`) |
 | Licence | GPL-3.0, in a public repository of the Mosquito-Alert GitHub organisation |
 | Starting point | Optional: a Hugo scaffold started by the project team (Appendix C) |
-| Work period | WP1 and WP2: Mon 23 Nov – Fri 11 Dec 2026, accepted and invoiced by Fri 18 Dec. WP3 and WP4: January–February 2027, separate request |
-| Price | Fixed price per work package, **excluding VAT**, with VAT shown separately. Binding for WP1 and WP2; indicative for WP3, WP4 and the options |
+| Work period | WP1 and WP2: Mon 23 Nov – Fri 11 Dec 2026, accepted and invoiced by Fri 18 Dec. WP3: January–February 2027, separate request. WP4 (launch): after Phase 2 |
+| Price | A fixed price for WP1 and a fixed price for WP2, **excluding VAT**, with VAT shown separately, plus a price for each option. No prices for WP3, WP4 or Phase 2 |
 
 Each requirement has one priority: **MUST** (required) or **SHOULD** (expected; tell us if dropping it would lower the price). Optional items marked **OPT** are priced separately. Requirement IDs (e.g. `URL-03`) are there so you can refer to them in your quotation. The **WP** column says which work package a requirement belongs to.
 
@@ -40,7 +40,7 @@ Each requirement has one priority: **MUST** (required) or **SHOULD** (expected; 
 
 The website was built on WordPress in 2014, with the Avada theme and its page builder (Fusion Builder), WPML for the three languages, and a dozen plugins, and it has been extended and updated since, through 2026. It is maintained by an external provider, and the team has limited control over it. The site has grown to about 600 blog posts, 200 pages, an FAQ section and an events calendar that stopped in 2018, with about 1.4 GB of uploaded media. The team prefers to work with static sites and Git, as it already does for its other web properties, and wants a site that it can update, back up and restyle itself.
 
-Phase 1 moves the site as it is. Phase 2 (2027, separate contract) will reorganise the content and apply a new visual identity that has already been drafted. Section 4.3 explains what Phase 1 must do to prepare for it.
+Phase 1 moves the content as it is, onto a plain theme. Phase 2 (2027, separate contract) will reorganise the content and apply a new visual identity that has already been drafted, and the new site will replace `www.mosquitoalert.com` only when Phase 2 is done. Section 4.3 explains what Phase 1 must do to prepare for it.
 
 ---
 
@@ -55,11 +55,12 @@ Phase 1 moves the site as it is. Phase 2 (2027, separate contract) will reorgani
 | **Fri 11 Dec** | **Milestone 1: WP1 and WP2 delivered.** The migration pipeline runs end to end. A preview site shows all blog posts, FAQ items and events with the home, blog and page templates in the three languages. Pages are migrated but not yet converted (that is WP3). |
 | Wed 16 Dec | The project team sends one consolidated round of feedback on WP1 and WP2 |
 | **Fri 18 Dec** | **Acceptance of WP1 and WP2 confirmed by the project team, and invoices submitted** |
-| Mid-December | Request for quotations for WP3 and WP4 (this document, updated), with about two weeks to reply |
-| January–February 2027 (indicative) | WP3 and WP4: conversion of the pages (about four weeks); **Milestone 2** (the complete site on the preview address, with the URL check report); one review round; content freeze and final pipeline run; **switchover** around mid-February; acceptance; one month of bug fixes |
+| Mid-December | Request for quotations for WP3 (this document, updated), with about two weeks to reply |
+| January–February 2027 (indicative) | WP3: conversion of the pages (about four weeks); **Milestone 2** (the complete site on the preview address, with the URL check report); one review round; acceptance; one month of bug fixes |
 | Until Thu 18 Feb 2027 | Bug fixes on WP1 and WP2 at no extra cost |
+| 2027, after Phase 2 | Phase 2 (restructuring and redesign, separate contract) works on the preview site. Then WP4: content freeze and final pipeline run, **launch** at `www.mosquitoalert.com`, and the old site kept at a fallback address for three months |
 
-Each work package is invoiced when it is accepted. **WP1 and WP2 must be accepted and invoiced in 2026**, by 18 December. Payment follows UPF's standard procedures after the invoice is accepted; UPF will tell the selected contractor what invoicing requirements apply. Please confirm in your quotation that you can meet these dates. After the switchover, the old site stays reachable at a fallback address for three months.
+Each work package is invoiced when it is accepted. **WP1 and WP2 must be accepted and invoiced in 2026**, by 18 December. Payment follows UPF's standard procedures after the invoice is accepted; UPF will tell the selected contractor what invoicing requirements apply. Please confirm in your quotation that you can meet these dates. The current WordPress site stays in production, and keeps receiving new posts, until the launch.
 
 ---
 
@@ -71,24 +72,25 @@ Each work package is invoiced when it is accepted. **WP1 and WP2 must be accepte
 |---|---|---|---|
 | **WP1** | **Content migration pipeline** | A documented, re-runnable pipeline that turns the WordPress export and media folder into Hugo content: posts, pages, FAQ items, events, taxonomies, translation links, media at their original paths, and the redirect map (sections 6.1, 6.2) | 11 Dec 2026 |
 | **WP2** | **Theme and site build** | The Hugo theme: layouts, shortcodes, navigation, header and footer, blog and taxonomy templates, search, newsletter sign-up, analytics with consent, metadata, build and deployment (sections 6.4–6.9, 7) | 11 Dec 2026 |
-| **WP3** | **Conversion of the page-builder pages** | The 192 pages built with Fusion Builder, reproduced with the shortcodes of WP2 (section 6.3) | Jan–Feb 2027, separate request |
-| **WP4** | **Quality assurance, launch and handover** | URL check report, side-by-side review fixes, accessibility and performance checks, content freeze run, switchover, documentation and handover (sections 8, 10) | Jan–Feb 2027, separate request |
+| **WP3** | **Conversion of the page-builder pages** | The 192 pages built with Fusion Builder, converted to the shortcodes of WP2 (section 6.3) | Jan–Feb 2027, separate request |
+| **WP4** | **Launch and handover** | Content freeze run, URL check report against production, switchover of `www.mosquitoalert.com`, old-site fallback, documentation and handover (section 10) | After Phase 2 (2027), separate request |
 
-WP2, WP3 and WP4 depend on the content model that WP1 produces, and WP3 uses the shortcodes that WP2 implements (TECH-11). Appendix A fixes that model so that packages can be awarded separately. **This request is for WP1 and WP2.** If you quote for only one of them, say which. Their bidders will be invited to quote for WP3 and WP4 in December, without any guaranteed right to them.
+WP2, WP3 and WP4 depend on the content model that WP1 produces, and WP3 uses the shortcodes that WP2 implements (TECH-11). Appendix A fixes that model so that packages can be awarded separately. **This request is for WP1 and WP2.** If you quote for only one of them, say which. Their bidders will be invited to quote for WP3 in December, without any guaranteed right to it.
 
 ### 4.2 In scope
 
 - **WP1 and WP2 (this request):** sections 6.1, 6.2, 6.4–6.9 and 7, and section 8 as it applies to the templates, deployed to a preview site, with documentation. The pipeline runs on the kick-off export.
-- **WP3 and WP4 (later request):** sections 6.3 and 8, the content-freeze run of the pipeline, the switchover, and the production deployment at `www.mosquitoalert.com`.
+- **WP3 (later request):** section 6.3, on the preview site.
+- **WP4 (after Phase 2):** the content-freeze run of the pipeline, the switchover to `www.mosquitoalert.com` and the old-site fallback (section 10).
 - The three languages, with the language switcher taking visitors to the translated page where one exists.
 
 ### 4.3 Looking ahead: Phase 2
 
-Phase 2 will restructure the site and apply a new identity (new logo, colour palette, typography and iconography, already drafted). To make this a re-skin rather than a rebuild, Phase 1 must keep content free of presentation (no inline styles, no theme-specific HTML in content files), express colours, fonts and spacing as design tokens in one place, and build pages from a small set of named components (TECH-04, PAGE-03). Phase 2 is **not part of this request**. Bidders are invited to describe their approach and give an hourly rate for it (OPT-06). Phase 1 can, however, show what the new identity will look like: OPT-07 adds a second, switchable set of design tokens, so that the preview site can display the new logo, colours, typefaces and icons on the migrated content while production keeps the current look until the team decides.
+Phase 2 will restructure the site and apply a new identity (new logo, colour palette, typography and iconography, already drafted), and the site will replace `www.mosquitoalert.com` only when Phase 2 is done. Phase 1 therefore does not need to look like the current site, and no time should be spent matching it (TECH-12). What Phase 1 must do is make Phase 2 easy: keep content free of presentation (no inline styles, no theme-specific HTML in content files), express colours, fonts and spacing as design tokens in one place, build pages from a small set of named components (TECH-04, PAGE-03), and keep the theme separable from the content and the pipeline, so that a designer can restyle or replace it without touching either. Phase 2 is **not part of this request**, and no prices or proposals for it are requested.
 
 ### 4.4 Out of scope
 
-- A new design, new content, translations, or rewriting existing texts. Content is migrated as it is, including its errors.
+- A new design (that is Phase 2), new content, translations, or rewriting existing texts. Content is migrated as it is, including its errors.
 - Contact forms (the three pages that embed one get email links instead, COMM-02), comments (the 19 existing comments are not migrated), user accounts, and the events calendar as a live feature (events become a static archive, MIG-06).
 - The WordPress site itself: the contractor does not need, and will not get, access to the WordPress administration. All input comes from export files (section 9).
 - Other Mosquito Alert web properties linked from the site: the public map (`map.mosquitoalert.com`), the education site (`edumosquitoalert.com`), the data portal, the app stores. Links to them are kept as they are.
@@ -98,7 +100,7 @@ Phase 2 will restructure the site and apply a new identity (new logo, colour pal
 
 ## 5. The current site
 
-The live site is the content and design reference for Phase 1. Browse it; the numbers below are from its sitemaps (5 November 2026) and from the WordPress export of 30 October 2025. Appendix B has the full inventory.
+The live site is the content reference for Phase 1 (its design is not reproduced, section 4.3). Browse it; the numbers below are from its sitemaps (5 November 2026) and from the WordPress export of 30 October 2025. Appendix B has the full inventory.
 
 | Content | Count | Notes |
 |---|---|---|
@@ -147,38 +149,38 @@ The attached `url_inventory.csv` lists every public URL of the current site with
 | ID | WP | Priority | Requirement |
 |---|---|---|---|
 | MIG-01 | WP1 | MUST | A documented, **re-runnable pipeline** (Python or Node, in the repository) converts a WordPress export file (WXR) and a copy of the uploads folder into Hugo content following Appendix A: published posts, pages, FAQ items and events, with title, publication and modification dates, slug, author name, categories, tags, featured image, excerpt, Yoast SEO title and description, WordPress ID and language. Drafts, private and trashed items are not migrated. |
-| MIG-02 | WP1 | MUST | **Translation links.** The export does not say which posts and pages are translations of each other. The pipeline obtains this from the live site (the `hreflang` links that WPML and Yoast print on every page, crawled once from the URL inventory) and records it as Hugo translation keys, so that the language switcher goes to the translated page where one exists and to the language home page otherwise. |
+| MIG-02 | WP1 | MUST | **Translation links.** The export does not say which posts and pages are translations of each other. The pipeline obtains this from the live site (the `hreflang` links that WPML and Yoast print on every page, crawled from the URL inventory, and again for new items at content freeze) and records it as Hugo translation keys, so that the language switcher goes to the translated page where one exists and to the language home page otherwise. |
 | MIG-03 | WP1 | MUST | **Post bodies** are converted to Markdown, keeping HTML where Markdown would lose structure (tables, complex figures). WordPress markup becomes Hugo shortcodes: `[caption]` to a figure with caption, galleries to a gallery, YouTube, Vimeo, Twitter/X, SoundCloud and issuu embeds and `[embed]`/`[video]` to embed shortcodes, Fusion gallery markup in posts likewise. No WordPress-, Avada- or plugin-specific classes, inline styles or scripts remain. |
 | MIG-04 | WP1 | MUST | **Media processing.** Referenced files are copied to `static/wp-content/uploads/YYYY/MM/` unchanged in name. Raster images are recompressed (same format and dimensions, metadata stripped, visually lossless). References to scaled variants that do not exist in the supplied originals are either regenerated at the same path or rewritten to the original (URL-05); say which you propose. Unreferenced images and the app installer ZIPs are left out, following a keep/drop list from the project team, and the dropped files are handed over as one archive. The published site stays below 900 MB (TECH-01). |
 | MIG-05 | WP1 | MUST | **FAQ items** become content with their category, order and anchors, and the FAQ page of each language shows them as accordions grouped by category, as today. |
 | MIG-06 | WP1 | MUST | **Events** (2016–2018) become a static archive: one page per event with date, venue and organiser, and an index per language sorted by date. They are not shown in the main navigation unless they are today. |
-| MIG-07 | WP1 | MUST | The pipeline is **idempotent and reports changes**: run again with a newer export, it adds, updates and removes content to match, and prints a summary (new, changed, removed items). It runs at kick-off and at content freeze, and the team can run it later. |
+| MIG-07 | WP1 | MUST | The pipeline is **idempotent and reports changes**: run again with a newer export, it adds, updates and removes content to match, and prints a summary (new, changed, removed items). Items whose WordPress modification date has not changed since the previous run are left untouched, so that pages converted or fixed by hand (WP3) survive a re-run; items changed in WordPress since are listed for re-conversion. It runs at kick-off and at content freeze, and the team can run it later. |
 | MIG-08 | WP1 | MUST | Internal links point to the new paths (URL-05); links to other domains, including images hosted on other domains, are left as they are. Attachment pages (`/<slug>/<attachment-slug>/`) are not migrated; links to them point to the file. |
 | MIG-09 | WP1 | SHOULD | Embeds of third-party media (YouTube, Twitter/X, issuu, SoundCloud) load only when the visitor clicks a placeholder that shows the thumbnail or title, so pages make no third-party requests on load. |
 | MIG-10 | WP1 | MUST | Content checks: the pipeline fails with a clear message if an item lacks a title, slug or language, or if a referenced media file is missing, and lists the items concerned. |
 
 ### 6.3 Pages built with Fusion Builder (PAGE)
 
-Of the 211 published pages, 192 are stored as Fusion Builder shortcodes (Appendix B lists the elements and how often they occur). These pages must be reproduced faithfully in content and structure, with a small set of Hugo shortcodes, and must not depend on Avada.
+Of the 211 published pages, 192 are stored as Fusion Builder shortcodes (Appendix B lists the elements and how often they occur). Their content and structure are carried over with a small set of Hugo shortcodes, without Avada; their look is not reproduced (section 4.3).
 
 | ID | WP | Priority | Requirement |
 |---|---|---|---|
-| PAGE-01 | WP3 | MUST | Each page shows the same sections in the same order, with the same texts, images, links, buttons, tabs, accordions and embedded media as today, and the same column arrangement at desktop width. Exact spacing, typography and decorative details are not required. |
+| PAGE-01 | WP3 | MUST | Each page keeps its content: the same sections in the same order, with the same texts, headings, images, links, buttons, tabs, accordions and embedded media as today. Multi-column arrangements are kept where they carry meaning (e.g. person cards, side-by-side comparisons) and otherwise flattened to one column. Spacing, typography, colours and decoration follow the Phase 1 theme, not the current page. |
 | PAGE-02 | WP3 | MUST | A **converter** (part of the pipeline, or a separate script) translates the structural and frequent elements automatically: containers, rows and columns, text, image frames, separators, titles, buttons, list items and checklists, tabs, content boxes, person cards, FAQ, YouTube/Vimeo, and global elements. Rare elements (sliders, testimonials, counters, code blocks, blog element) may be converted by hand or simplified to a static equivalent agreed with the project team. |
 | PAGE-03 | WP3 | MUST | Page files contain **editable Markdown or HTML with Hugo shortcodes** (Appendix A). Pasting rendered theme HTML is not acceptable. No Avada or Fusion CSS, JavaScript or class names remain. |
 | PAGE-04 | WP3 | MUST | The 18 **global elements** that pages reuse (calls to action, logo strips and similar) are defined once, as shortcodes or partials, and included by name. |
-| PAGE-05 | WP3 | MUST | The three WordPress page templates in use (full width, 111 pages; default, 81; blank, 19) map to Hugo layouts with the same effect on header, footer and width. |
-| PAGE-06 | WP3 | MUST | Every page is **reviewed side by side** with the live page by the contractor before Milestone 2, and a checklist with one line per page (converted automatically, hand-fixed, simplified, dropped) is delivered. |
-| PAGE-07 | WP2 | MUST | The **home pages** (3) are rebuilt as data-driven sections (hero, highlights, app download, latest posts, calls to action, newsletter, partner logos) whose texts and links live in data files, as the scaffold already sketches. |
+| PAGE-05 | WP3 | SHOULD | The WordPress page template (full width, 111 pages; default, 81; blank, 19) is recorded in front matter (`layout`), and the blank-template pages are shown without header and footer where they are today. Otherwise all pages use the theme's page layout. |
+| PAGE-06 | WP3 | MUST | A **conversion report** with one line per page (converted automatically, hand-fixed, simplified, dropped, and the elements that could not be converted). No visual side-by-side review is required; an automated check that every paragraph, image and link of the live page is present in the converted page is a SHOULD. |
+| PAGE-07 | WP2 | MUST | The **home pages** (3) are rebuilt as data-driven sections (hero, highlights, app download, latest posts, calls to action, newsletter, partner logos) with the current texts, links and images, which live in data files, as the scaffold already sketches. The layout of the sections follows the Phase 1 theme, not the current home page. |
 
 ### 6.4 Blog and taxonomies (BLOG)
 
 | ID | WP | Priority | Requirement |
 |---|---|---|---|
-| BLOG-01 | WP2 | MUST | Blog index per language at `/blog/` (and `/ca/blog/`, `/en/blog/`) with pagination, showing featured image, date, title and excerpt, like today's list. |
+| BLOG-01 | WP2 | MUST | Blog index per language at `/blog/` (and `/ca/blog/`, `/en/blog/`) with pagination, showing featured image, date, title and excerpt. |
 | BLOG-02 | WP2 | MUST | Post layout: title, date, author name, featured image, body, categories and tags, share links that are plain links (no third-party scripts), and previous/next post. |
 | BLOG-03 | WP2 | MUST | Category and tag archive pages at their current paths (URL-03), with the same list layout. |
-| BLOG-04 | WP2 | SHOULD | Related posts (same category) at the end of each post, as today. |
+| BLOG-04 | WP2 | SHOULD | Related posts (same category) at the end of each post. |
 | BLOG-05 | WP2 | MUST | An **author** can be set per post as plain text (name), with no author pages. |
 
 ### 6.5 Navigation, header and footer (NAV)
@@ -186,8 +188,8 @@ Of the 211 published pages, 192 are stored as Fusion Builder shortcodes (Appendi
 | ID | WP | Priority | Requirement |
 |---|---|---|---|
 | NAV-01 | WP2 | MUST | Main menu per language with the same items, labels, order, two levels and targets as the current WordPress menus (which are in the export), defined in configuration or data files that the team can edit. Items pointing to dropped URLs are removed or retargeted at kick-off. |
-| NAV-02 | WP2 | MUST | Header: logo, main menu, language switcher (Spanish, Catalan, English, to the translated page, MIG-02), search link; top bar with the current social links and quick links. Sticky header behaviour as today is a SHOULD. |
-| NAV-03 | WP2 | MUST | Footer per language reproducing the current footer: the smaller menus, partner and funder logos, social links, app store badges, newsletter sign-up (COMM-01) and legal links. |
+| NAV-02 | WP2 | MUST | Header: logo, main menu, language switcher (Spanish, Catalan, English, to the translated page, MIG-02), search link, and the social links and quick links of today's top bar. Its layout follows the Phase 1 theme. |
+| NAV-03 | WP2 | MUST | Footer per language with the contents of the current footer: the smaller menus, partner and funder logos, social links, app store badges, newsletter sign-up (COMM-01) and legal links, laid out by the theme. |
 | NAV-04 | WP2 | MUST | Mobile navigation (hamburger menu) covering the full menu, usable by keyboard and screen reader. |
 
 ### 6.6 Search (SRCH)
@@ -220,7 +222,7 @@ The site currently uses Google Analytics 4 without a consent banner. The team ma
 | ID | WP | Priority | Requirement |
 |---|---|---|---|
 | SEO-01 | WP2 | MUST | Per page and language: title and description (from the Yoast fields where present, otherwise generated), canonical URL, `hreflang` links between translations and `x-default`, Open Graph and Twitter card tags with the featured image, a default social image, `sitemap.xml` (per language, with an index), `robots.txt` and favicons. |
-| SEO-02 | WP2 | MUST | **Preview deployments** carry `noindex` and a visible "preview" banner until launch, so that visitors and search engines are not confused by two sites. |
+| SEO-02 | WP2 | MUST | The **preview site** carries `noindex` and a visible "preview" banner until the launch (WP4), so that visitors and search engines are not confused by two sites. |
 | SEO-03 | WP2 | SHOULD | Structured data (`Article`) for blog posts, and `BreadcrumbList` for nested pages. |
 
 ---
@@ -231,7 +233,7 @@ The site currently uses Google Analytics 4 without a consent banner. The team ma
 |---|---|---|---|
 | TECH-01 | WP2 | MUST | **Hugo (extended), current stable release**, pinned in the build. Static output only: no server-side code, database or accounts. The build fails if the published site exceeds 900 MB or if Hugo reports errors, and completes within the GitHub Pages limits (1 GB site, 10-minute deployment). |
 | TECH-02 | WP2 | MUST | Source, content and media live in a **public repository of the Mosquito-Alert GitHub organisation** under **GPL-3.0**, as plain files (**no Git LFS**). Third-party components have GPL-3.0-compatible licences; fonts and icons are licensed for self-hosting. |
-| TECH-03 | WP2 | MUST | **GitHub Actions** builds and deploys the main branch to **GitHub Pages** at `www.mosquitoalert.com` (custom domain, HTTPS enforced), and deploys a **preview site** (a second Pages site or branch) for review before launch and for pull requests afterwards. |
+| TECH-03 | WP2 | MUST | **GitHub Actions** builds the main branch and deploys it to **GitHub Pages** at a preview address (the `github.io` address or a subdomain the team provides), and is ready to deploy to `www.mosquitoalert.com` (custom domain, HTTPS enforced) with a configuration change at launch (WP4). Previews of pull requests are a SHOULD. |
 | TECH-04 | WP2 | MUST | **Separation of content, structure and style.** Content files hold Markdown or HTML with shortcodes and front matter only; layouts and partials hold structure; one stylesheet system holds presentation, with colours, type scale, spacing and breakpoints as CSS custom properties in one tokens file. No inline styles in content, and no content in templates. |
 | TECH-05 | WP1 | MUST | The pipeline needs **no access to WordPress**: its inputs are the export file, the uploads folder, the crawled translation links (MIG-02) and the inventory, all provided as files. |
 | TECH-06 | WP1 | MUST | The pipeline, converter, crawler and URL check script are in the repository with a README that lets a developer run them from scratch in under an hour. |
@@ -240,6 +242,7 @@ The site currently uses Google Analytics 4 without a consent banner. The team ma
 | TECH-09 | WP2 | SHOULD | A link checker runs in the build (e.g. htmltest or lychee) and fails on broken internal links. |
 | TECH-10 | WP2 | MUST | `hugo server` runs the site locally without the migration tooling, and the README says how. |
 | TECH-11 | WP2 | MUST | The **shortcodes of Appendix A.3** are implemented in the theme, styled, documented, and shown together on a demo page that is not published in production, so that WP3 can convert pages against them. |
+| TECH-12 | WP2 | MUST | **Plain theme.** The Phase 1 theme is simple and functional: the current logo, the current main colours (Appendix B.5), one or two self-hosted open-licence typefaces, and a documented set of components (header, footer, home sections, post, list, page, FAQ, event, search, 404 and the shortcodes of Appendix A.3). It does not reproduce the look of the current site, and no time should be spent matching it. Phase 2 restyles or replaces the theme without touching content, data files or the pipeline. |
 
 ---
 
@@ -260,13 +263,13 @@ The site currently uses Google Analytics 4 without a consent banner. The team ma
 
 By the kick-off on **Monday 23 November 2026**, unless noted:
 
-1. **The WordPress export (WXR)** of the whole site, and a fresh export at content freeze (WP4, 2027). The export contains unpublished items and author details; it is confidential and only published content is migrated.
+1. **The WordPress export (WXR)** of the whole site, and a fresh export at content freeze (WP4, after Phase 2). The export contains unpublished items and author details; it is confidential and only published content is migrated.
 2. **A copy of the uploads folder** (2,790 files, 1.46 GB, originals only), the list of files referenced by published content, the keep/drop list for unreferenced files, and the new files at content freeze.
 3. **The URL inventory** (attached now), the list of URLs to drop, and decisions on any tier questions within one working day.
-4. **Access**: the public repository in the Mosquito-Alert GitHub organisation (Appendix C), GitHub Pages for production and preview, and the DNS change at switchover (done by the team's DNS administrator, following the contractor's instructions, with the old site kept at a fallback address).
+4. **Access**: the public repository in the Mosquito-Alert GitHub organisation (Appendix C) and GitHub Pages for the preview site; at launch (WP4), the DNS change (done by the team's DNS administrator, following the contractor's instructions, with the old site kept at a fallback address).
 5. **Accounts and texts**: the Mailchimp form code, the Google Analytics measurement ID (or the chosen alternative), the cookie banner and consent texts in three languages, logos in vector form, and email addresses to replace the three forms.
 6. **Translations** of any new interface strings within two working days of receiving the string file.
-7. **One contact person** (John Palmer), who replies to questions within one working day, and a communications team that does the review rounds (16 December for WP1 and WP2; February for WP3 and WP4) and reports issues in the repository.
+7. **One contact person** (John Palmer), who replies to questions within one working day, and a communications team that does the review rounds (16 December for WP1 and WP2; February for WP3; at launch for WP4) and reports issues in the repository.
 
 ---
 
@@ -281,11 +284,13 @@ By the kick-off on **Monday 23 November 2026**, unless noted:
 3. The preview site deployed by GitHub Actions (TECH-03, SEO-02), and the URL check report against it (URL-07).
 4. A 30-minute handover call, and bug fixes at no extra cost until Thursday 18 February 2027.
 
-**WP3 and WP4 (later request):** the converted pages and the page conversion checklist (PAGE-06); the content-freeze run; the production site at `www.mosquitoalert.com`; the URL check report against production; the archive of dropped media files (MIG-04); a 1-hour handover call; and bug fixes at no extra cost for one month after acceptance.
+**WP3 (later request):** the converted pages and the conversion report (PAGE-06), the complete site on the preview address (Milestone 2), and bug fixes at no extra cost for one month after acceptance.
+
+**WP4 (after Phase 2):** the content-freeze run; the production site at `www.mosquitoalert.com`; the URL check report against production; the archive of dropped media files (MIG-04); a 1-hour handover call; and bug fixes at no extra cost for one month after launch.
 
 ### 10.2 Acceptance criteria
 
-A work package is accepted when its MUST requirements are met and the checks below pass. For WP1 and WP2, the checks run on the preview site between 11 and 18 December, leaving aside the pages that WP3 converts; for WP3 and WP4, they run on the production site at launch.
+A work package is accepted when its MUST requirements are met and the checks below pass. For WP1 and WP2, the checks run on the preview site between 11 and 18 December, leaving aside the pages that WP3 converts; for WP3, they run on the preview site at Milestone 2; for WP4, on the production site at launch.
 
 1. **URLs:** the URL check report shows every tier-1 URL returning 200 with the equivalent content (for WP1 and WP2, pages may still show unconverted content), every tier-2 URL returning 200, every tier-3 URL returning a redirect page to the mapped target, and every tier-4 URL returning the 404 page. The internal link checker reports no broken links.
 2. **Content:** counts per type and language match the final export (QUAL-06). The team compares a random sample of 30 posts and 20 pages with the old site and finds no missing text, images, links or embeds.
@@ -307,10 +312,8 @@ These may or may not be ordered.
 | OPT-01 | **Editing interface.** A Git-based CMS for editors (e.g. Sveltia CMS or Decap CMS) with GitHub login, the three languages, image uploads and an editorial (draft/review) workflow, including whatever small authentication helper it needs on a free tier, and its documentation. |
 | OPT-02 | **Contact forms** for the three pages that have one today, through a form service with spam protection and a GDPR-compliant privacy text, with no server of our own. Name the service and any cost. |
 | OPT-03 | **Cookieless analytics** instead of Google Analytics: set-up and configuration of a privacy-friendly service chosen with the team (e.g. Plausible, Umami or GoatCounter), so that no consent banner is needed. Name the service and any cost. |
-| OPT-04 | **Cloudflare in front of GitHub Pages** (free plan): DNS set-up, HTTPS, and server-side redirects generated from the redirect map (Bulk Redirects), so that redirected URLs return HTTP 301 instead of an HTML redirect page. |
+| OPT-04 | **Cloudflare in front of GitHub Pages** (free plan), set up for the preview site and reusable at launch: DNS, HTTPS, and server-side redirects generated from the redirect map (Bulk Redirects), so that redirected URLs return HTTP 301 instead of an HTML redirect page. |
 | OPT-05 | **Comments archive:** the 19 existing comments shown as static text under their posts. |
-| OPT-06 | **Phase 2 approach** (not a fixed price): how you would approach the restructuring and redesign in 2027, with an hourly rate and 2–3 examples of design or redesign work. |
-| OPT-07 | **New brand on the preview site.** A second, switchable set of design tokens (logo, colour palette, typefaces, icon set) applied to the same layouts, so that the preview site can show the new Mosquito Alert identity on the real content while production keeps the current look until the team decides. No layout or structure changes. The team supplies the brand files once the identity is approved; price the work assuming they arrive before the end of WP2, and say what changes if they arrive later. |
 
 ---
 
@@ -318,15 +321,14 @@ These may or may not be ordered.
 
 Send your quotation by email to **john.palmer@upf.edu** by **Friday 13 November 2026, 12:00 CET**. Please include:
 
-1. **A fixed price excluding VAT for WP1 and for WP2**, with the applicable VAT shown separately (if you are established outside Spain, say whether the reverse charge applies instead), and ANA-02 as a separate line. UPF may award the two packages together or separately, and may award them to different bidders. If you quote for only one, say which. Tell us which SHOULD items you would drop to reduce the price, and by how much. **Indicative prices for WP3 and WP4** are welcome but not binding; they will be requested formally in December.
-2. **A price excluding VAT for each optional item** OPT-01 to OPT-05 and OPT-07, and your answer to OPT-06.
+1. **A fixed price excluding VAT for WP1 and for WP2**, with the applicable VAT shown separately (if you are established outside Spain, say whether the reverse charge applies instead), and ANA-02 as a separate line. UPF may award the two packages together or separately, and may award them to different bidders. If you quote for only one, say which. Tell us which SHOULD items you would drop to reduce the price, and by how much.
+2. **A price excluding VAT for each optional item** OPT-01 to OPT-05.
 3. **Confirmation that you can deliver WP1 and WP2 by 11 December and invoice by 18 December 2026**, and who will do the work between 23 November and 18 December.
-4. **Your approach**: Hugo version and theme approach; how the pipeline obtains translation links (MIG-02); how you handle scaled image variants (MIG-04); how you would convert the Fusion Builder pages in WP3 (PAGE-02) and how much you expect to do by hand; whether you would start from the scaffold (Appendix C) or from scratch, and why.
+4. **Your approach**: Hugo version and theme approach; how the pipeline obtains translation links (MIG-02); how you handle scaled image variants (MIG-04); how the shortcodes of Appendix A.3 (TECH-11) will support the later conversion of the Fusion Builder pages; whether you would start from the scaffold (Appendix C) or from scratch, and why.
 5. **2–3 examples** of relevant work, such as WordPress-to-static migrations, Hugo or other static sites, and multilingual or accessible websites, with links.
 6. **Assumptions and exclusions.**
-7. **An hourly rate excluding VAT** for later changes.
 
-We will choose based on: the quality and realism of the approach to keeping URLs working and converting the pages, relevant experience, price (compared excluding VAT), and ability to meet the dates.
+We will choose based on: the quality and realism of the approach to keeping URLs working and to the content model, relevant experience, price (compared excluding VAT), and ability to meet the dates.
 
 ---
 

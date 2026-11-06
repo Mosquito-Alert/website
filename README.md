@@ -2,14 +2,14 @@
 
 The future home of [www.mosquitoalert.com](https://www.mosquitoalert.com) as a static site generated with [Hugo](https://gohugo.io) and hosted on GitHub Pages, replacing the current WordPress site.
 
-**Status (November 2026):** the migration is being contracted. The specification for quotation is in [`bid-phase1/`](bid-phase1/): quotations for work packages 1 and 2 (migration pipeline; theme and site build) are due Friday 13 November 2026, 12:00 CET, and packages 3 and 4 (page conversion; launch) will be requested in December. This repository holds a scaffold that the project team started in 2025; bidders may use it as a starting point or ignore it (see Appendix C of the specification).
+**Status (November 2026):** the migration is being contracted. The specification for quotation is in [`bid-phase1/`](bid-phase1/): quotations for work packages 1 and 2 (migration pipeline; theme and site build) are due Friday 13 November 2026, 12:00 CET. Package 3 (page conversion) will be requested in December, and package 4 (launch) after the Phase 2 redesign: the current site stays live until then. This repository holds a scaffold that the project team started in 2025; bidders may use it as a starting point or ignore it (see Appendix C of the specification).
 
 ## The project in two phases
 
 | Phase | What | Status |
 |---|---|---|
-| 1. Migration | Move the current site to Hugo as it is: same content, URLs, navigation and languages, essentially the same look | Specification published; quotations for WP1–2 due 13 Nov 2026 |
-| 2. Redesign | Restructure the site and apply the new Mosquito Alert visual identity | 2027, separate contract |
+| 1. Migration | Move the current site to Hugo: same content, URLs, navigation and languages, on a plain theme (the current look is not reproduced) | Specification published; quotations for WP1–2 due 13 Nov 2026 |
+| 2. Redesign | Restructure the site, apply the new Mosquito Alert visual identity, then launch | 2027, separate contract |
 
 ## Repository layout
 
