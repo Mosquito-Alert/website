@@ -1,7 +1,0 @@
-{
-  "name": "hmip-spec-build",
-  "private": true,
-  "description": "Builds the web pages and PDFs of the H-MIP specifications from their Markdown sources",
-  "scripts": { "build": "./build.sh" },
-  "dependencies": { "playwright-core": "1.45.3" }
-}
