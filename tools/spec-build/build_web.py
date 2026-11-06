@@ -33,7 +33,7 @@ CFG = {
     <div role="listitem"><span class="k">Requirements</span><span class="v num">{{MUST}} must · {{SHOULD}} should · {{OPTS}} opt.</span></div>
   </div>
 </header>''',
-   tocnote='<p class="toc-note">Attachments: <code>url_inventory.csv</code> (the 2,204 public URLs of the current site) and the optional scaffold at <code>github.com/Mosquito-Alert/website</code>.</p>'),
+   tocnote='<p class="toc-note">Attachments: <code>url_inventory.csv</code> (the 2,204 public URLs of the current site) and the optional scaffold on the <code>scaffold-2025</code> branch of <code>github.com/Mosquito-Alert/website</code>.</p>'),
 }[cfg_name]
 
 body = subprocess.run(['pandoc', CFG['src'], '-t', 'html5', '--wrap=none'], capture_output=True, text=True, check=True).stdout

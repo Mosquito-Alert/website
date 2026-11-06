@@ -4,7 +4,7 @@
 **Client:** Mosquito Alert, Universitat Pompeu Fabra (UPF)
 **Contact:** John Palmer, john.palmer@upf.edu
 **Reference site:** [www.mosquitoalert.com](https://www.mosquitoalert.com) (the current WordPress site, which this project replaces)
-**Attachments:** `url_inventory.csv`, the list of the 2,204 public URLs of the current site; the public repository `Mosquito-Alert/website`, an optional starting point (Appendix C)
+**Attachments:** `url_inventory.csv`, the list of the 2,204 public URLs of the current site; the public repository `Mosquito-Alert/website`, whose `scaffold-2025` branch is an optional starting point (Appendix C)
 
 ---
 
@@ -26,7 +26,7 @@ The work is divided into four work packages (section 4). **This request asks for
 | Server / backend | **None.** A static site on GitHub Pages, built by GitHub Actions |
 | Languages | Spanish (default, at the root), Catalan (`/ca/`), English (`/en/`) |
 | Licence | GPL-3.0, in a public repository of the Mosquito-Alert GitHub organisation |
-| Starting point | Optional: a Hugo scaffold started by the project team (Appendix C) |
+| Starting point | Optional: a Hugo scaffold started by the project team, on the `scaffold-2025` branch of the public repository (Appendix C) |
 | Work period | WP1 and WP2: Mon 23 Nov – Fri 11 Dec 2026, accepted and invoiced by Fri 18 Dec. WP3: January–February 2027, separate request. WP4 (launch): after Phase 2 |
 | Price | A fixed price for WP1 and a fixed price for WP2, **excluding VAT**, with VAT shown separately, plus a price for each option. No prices for WP3, WP4 or Phase 2 |
 
@@ -477,14 +477,14 @@ WordPress 6.0.18; Avada 7.2 with the child theme `mosquitoalert`; Fusion Builder
 
 ## Appendix C. The optional Hugo scaffold
 
-In 2025 the project team started a Hugo version of the site in the public repository **`github.com/Mosquito-Alert/website`** (GPL-3.0). You may start from it, take parts of it, or ignore it; there is no obligation and no advantage in the evaluation either way. It contains:
+In 2025 the project team started a Hugo version of the site. It is kept, frozen, on the **`scaffold-2025` branch** of the public repository **`github.com/Mosquito-Alert/website`** (GPL-3.0); the `main` branch holds this specification and is where the contractor's work will go. You may start from the scaffold, take parts of it, or ignore it; there is no obligation and no advantage in the evaluation either way. It contains:
 
 - A Hugo configuration with the three languages (Spanish at the root), the permalink scheme for posts and events, and the Spanish main menu copied from WordPress.
 - Layouts for the home page (hero, highlights, app, latest posts, calls to action, newsletter, partners, driven by data files), blog list and single post, taxonomy pages, a header with menu toggle and language menu, and a footer driven by data files.
 - A first WordPress-export converter (`scripts/wxr_to_hugo.py`) that writes front matter and the HTML body verbatim, used to import 30 test posts, and a script that profiles the export.
 - A placeholder Decap CMS configuration and a GitHub Actions workflow (deployment switched off in the public copy).
 
-Known gaps, which this specification resolves: the converter does not handle translation links, shortcodes or media; its test copy of the uploads folder was flattened, so media URLs did not match the original paths; media were stored with Git LFS, which the deployment cannot afford; the permalink setting for pages does not support nested pages; and the Decap configuration depends on a service that is being retired. The repository builds with `hugo server`; images are missing because the media are not in the public repository (they are supplied to the contractor, section 9).
+Known gaps, which this specification resolves: the converter does not handle translation links, shortcodes or media; its test copy of the uploads folder was flattened, so media URLs did not match the original paths; media were stored with Git LFS, which the deployment cannot afford; the permalink setting for pages does not support nested pages; and the Decap configuration depends on a service that is being retired. The branch builds with `hugo server`; images are missing because the media are not in the public repository (they are supplied to the contractor, section 9).
 
 ---
 

@@ -1,8 +1,0 @@
-- id: header_menu_toggle
-  translation: "Menu"
-- id: header_primary_nav_label
-  translation: "Main navigation"
-- id: header_language_selector
-  translation: "Language selector"
-- id: header_subnav_toggle
-  translation: "Toggle sub-menu for {{ .Section }}"
