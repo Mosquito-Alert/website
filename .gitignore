@@ -18,3 +18,9 @@ node_modules/
 
 # Specification build output
 tools/spec-build/out/
+
+# Handover data: the HTML snapshot and the crawl log stay local
+handover/crawl/html/
+handover/crawl/crawl.log
+handover/media/*.tar
+handover/media/fetch.log

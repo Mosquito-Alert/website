@@ -28,12 +28,12 @@ CFG = {
   <div class="glance" role="list" aria-label="At a glance">
     <div role="listitem"><span class="k">Hosting</span><span class="v">GitHub Pages · GPL-3.0</span></div>
     <div role="listitem"><span class="k">Design</span><span class="v">Plain theme · redesign in Phase 2</span></div>
-    <div role="listitem"><span class="k">Content</span><span class="v">607 posts · 206 pages · 1 GB media</span></div>
+    <div role="listitem"><span class="k">Content</span><span class="v">604 posts · 209 pages · 0.8 GB media</span></div>
     <div role="listitem"><span class="k">Languages</span><span class="v">Spanish · Catalan · English</span></div>
     <div role="listitem"><span class="k">Requirements</span><span class="v num">{{MUST}} must · {{SHOULD}} should · {{OPTS}} opt.</span></div>
   </div>
 </header>''',
-   tocnote='<p class="toc-note">Attachments: <code>url_inventory.csv</code> (the 2,204 public URLs of the current site) and the optional scaffold on the <code>scaffold-2025</code> branch of <code>github.com/Mosquito-Alert/website</code>.</p>'),
+   tocnote='<p class="toc-note">Version 1.1: Appendix E lists the changes since version 1.0, and Appendix D answers bidders\' questions. Attachments: <code>url_inventory.csv</code>, <code>content_inventory.csv</code>, <code>redirects_seed.csv</code>, <code>sample_export.xml</code>, and the optional scaffold on the <code>scaffold-2025</code> branch of <code>github.com/Mosquito-Alert/website</code>.</p>'),
 }[cfg_name]
 
 body = subprocess.run(['pandoc', CFG['src'], '-t', 'html5', '--wrap=none'], capture_output=True, text=True, check=True).stdout

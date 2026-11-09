@@ -15,7 +15,7 @@ The future home of [www.mosquitoalert.com](https://www.mosquitoalert.com) as a s
 
 | Path | Contents |
 |---|---|
-| `bid-phase1/` | Phase 1 specification (Markdown and PDF) and `url_inventory.csv`, the public URLs of the current site |
+| `bid-phase1/` | Phase 1 specification, version 1.1 (Markdown and PDF), and its attachments: `url_inventory.csv` (the public URLs of the current site), `content_inventory.csv` (one row per published item), `redirects_seed.csv` (redirects that WordPress performs today) and `sample_export.xml` (a sanitised sample of the WordPress export) |
 | `tools/spec-build/` | Builds the specification PDF from its Markdown source |
 | branch `scaffold-2025` | The 2025 Hugo scaffold: configuration for the three languages, home, blog and taxonomy layouts, a first export converter and 30 test posts. Frozen; optional starting point, with its own README |
 
